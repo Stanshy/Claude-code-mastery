@@ -2,6 +2,8 @@
 
 Claude Code 完整教學講義——涵蓋基礎操作、配置系統、自動化、Agent 編排、Harness Engineering，以及頂級工程師的實戰框架。
 
+> **[English Version (README.en.md)](README.en.md)**
+
 ---
 
 ## 課程結構：五層進化模型
