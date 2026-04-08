@@ -239,3 +239,9 @@ The purpose of understanding anti-patterns is not to criticize, but to help you 
 - Open `.claude/pitfalls.md` — when was the oldest "pending closure" entry added? How many days ago? If it's more than two weeks, the closed-loop mechanism is already broken.
 - Is there any rule in your Harness where you can't explain which real pitfall it corresponds to? That rule is a symptom of Copy-Paste Syndrome and needs its necessity re-evaluated.
 - If you upgrade Claude Code to the next major version tomorrow, how would you verify which Hooks can be removed? If you can't articulate this verification plan right now, Step 6 auditing hasn't truly been put into practice yet.
+
+---
+
+⬅️ [Previous: Seven Design Principles](06-1-seven-principles.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Boris Cherny Workflow](../07-frameworks/07-1-boris-cherny.md)
+
+🌐 [繁體中文版](../../zh/06-Harness-Engineering/06-2-從零建立Harness.md)

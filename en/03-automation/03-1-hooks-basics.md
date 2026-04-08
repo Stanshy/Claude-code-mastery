@@ -301,3 +301,9 @@ In ESLint, you can achieve this effect by customizing a rule's `message` field. 
 - If you want to ensure "every time Claude creates a new file, it is automatically staged in git," which Hook event should you use? What should the matcher be set to?
 - When a `PreToolUse` Hook script executes `exit 2`, how does Claude know "why" it was blocked? What happens if you do not write any stderr message?
 - What are the most suitable scenarios for CLAUDE.md rules vs. Hooks respectively? Give an example from ai-dev-assistant of one rule that should stay in CLAUDE.md and one that should be promoted to a Hook, and explain the reasoning.
+
+---
+
+⬅️ [Previous: Agent = Model + Harness](../02-config/02-3-harness-preview.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Advanced Hooks & Validator Pattern](03-2-hooks-advanced.md)
+
+🌐 [繁體中文版](../../zh/03-自動化層/03-1-Hooks基礎.md)

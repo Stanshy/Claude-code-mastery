@@ -253,3 +253,9 @@ Among these, "JSON parse failure" is the most insidious problem. Claude Code com
 - If your Stop Hook script lacks the `stop_hook_active` check, what would happen during actual execution? Can you describe the complete loop process?
 - In a Hook configuration with a PostToolUse event, how would you decide between using the `command` type versus the `prompt` type? What are the criteria for each?
 - Building on the `ai-dev-assistant` configuration from the previous chapter, your `settings.json` should now have Hooks for both `PostToolUse` and `Stop` events. If both events include lint checking, how would you refactor to avoid duplication?
+
+---
+
+⬅️ [Previous: Hooks Basics](03-1-hooks-basics.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Skills System](03-3-skills.md)
+
+🌐 [繁體中文版](../../zh/03-自動化層/03-2-Hooks進階與Validator模式.md)

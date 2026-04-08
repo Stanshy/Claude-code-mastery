@@ -306,3 +306,9 @@ This is the complete evolution lifecycle of a rule: from pitfall → CLAUDE.md r
 - In your current CLAUDE.md, is there a rule that Claude has violated more than once? Has it reached the threshold for upgrading to a Hook? If you have not yet created the Hook, what is holding you back?
 - In the five-layer evolution model, which layer are you currently at in your work? Do you believe your current layer is sufficient, or is there specific friction pushing you to evolve to the next layer?
 - If you were to build a PostToolUse Hook for the most painful recurring problem you currently face, under what conditions should this Hook trigger, and what should it do?
+
+---
+
+⬅️ [Previous: Open-Source Harness Cases](07-3-open-source-cases.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Cheatsheet](../08-reference/08-1-cheatsheet.md)
+
+🌐 [繁體中文版](../../zh/07-實戰框架與工作流/07-4-David-Chu進化框架.md)

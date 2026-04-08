@@ -161,3 +161,9 @@ This mechanism allows you to safely have multiple subagents modify code in paral
 - Can you start a second session and begin working without closing the first Claude session? Try it and confirm that `git branch` in each worktree shows a different branch name.
 - If both sessions modify `src/config.ts`, what happens during the merge? Can you use `git diff feature-auth feature-dashboard -- src/config.ts` to preview the differences before merging?
 - In Boris Cherny's strategy of completing 259 PRs with 5 local sessions, where is the bottleneck? Is it Claude's speed, your speed at switching attention, or the frequency of git merges?
+
+---
+
+⬅️ [Previous: Context Management Strategies](04-2-context-management.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Agent Teams](../05-autonomous/05-1-agent-teams.md)
+
+🌐 [繁體中文版](../../zh/04-編排層/04-3-平行開發與Worktree.md)

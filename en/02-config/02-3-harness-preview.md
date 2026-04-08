@@ -81,3 +81,9 @@ Module 6 will fully expand on the seven design principles of the Harness, using 
 - If someone says "just swap in a stronger model and the Agent will get better," how would you respond?
 - In the Harness comparison table above, what engineering principle does the "Rule Compliance" row illustrate?
 - Think of a scenario in your current work where AI output is unstable — which type of Harness mechanism is it most likely missing?
+
+---
+
+⬅️ [Previous: Settings & Permissions](02-2-settings-permissions.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Hooks Basics](../03-automation/03-1-hooks-basics.md)
+
+🌐 [繁體中文版](../../zh/02-基礎配置/02-3-Agent等於Model加Harness.md)

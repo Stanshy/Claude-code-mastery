@@ -98,3 +98,9 @@
 | 8 | claude-code-hooks-mastery | Hooks hands-on mastery |
 | 9 | awesomeclaude.ai/code-cheatsheet | Most comprehensive cheat sheet |
 | 10 | Claude Code Official Docs | Authoritative documentation for all features |
+
+---
+
+⬅️ [Previous: Cheatsheet](08-1-cheatsheet.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Disaster Recovery](08-3-disaster-recovery.md)
+
+🌐 [繁體中文版](../../zh/08-參考資源/08-2-資源索引.md)

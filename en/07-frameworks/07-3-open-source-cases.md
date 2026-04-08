@@ -240,3 +240,9 @@ The core logic of this path is: **Start with the minimum combination to build ha
 - Using the seven-concept framework, examine your current workflow (or CLAUDE.md) — which concept is completely missing? Has this gap caused you actual pain points?
 - If you were to build a minimum Harness today, what are the three most important rules from your "This Week's Lessons Learned" list?
 - What is the core difference between TypeScript Runtime Guardrails and CLAUDE.md text rules? In your current work, which rule is worth upgrading to hard interception?
+
+---
+
+⬅️ [Previous: gstack Role System](07-2-gstack.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: David Chu Evolution Framework](07-4-david-chu.md)
+
+🌐 [繁體中文版](../../zh/07-實戰框架與工作流/07-3-開源Harness案例.md)

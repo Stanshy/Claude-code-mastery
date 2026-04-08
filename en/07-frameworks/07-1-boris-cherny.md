@@ -193,3 +193,9 @@ This is the everyday face of the Boris Workflow: not magic, but a system of doin
 - If you were to start using the Boris Workflow today, how many rules in your current CLAUDE.md are extracted from real pitfalls? Which ones are just rules that "felt like they should be included"?
 - How many lines was your last PR? If it exceeded 200 lines, which part could be split out into an independent PR?
 - When Claude is working in a session, what are you doing? If the answer is "waiting," which tasks could you parallelize to eliminate that wait?
+
+---
+
+⬅️ [Previous: Build a Harness from Scratch](../06-harness/06-2-build-from-zero.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: gstack Role System](07-2-gstack.md)
+
+🌐 [繁體中文版](../../zh/07-實戰框架與工作流/07-1-Boris-Cherny工作法.md)

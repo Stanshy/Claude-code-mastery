@@ -223,3 +223,9 @@ When designing automation workflows, two principles are worth remembering. First
 - Can you explain the difference in use cases between `--output-format json` and `--output-format stream-json`, and give a specific scenario suited to each?
 - If a Claude review workflow in GitHub Actions executes successfully but the PR has no comments, what three things would you check, and in what order?
 - Using `--session-id`, can you design a three-step automation script (analyze, fix, verify)?
+
+---
+
+⬅️ [Previous: Agent Teams](05-1-agent-teams.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Agent SDK](05-3-agent-sdk.md)
+
+🌐 [繁體中文版](../../zh/05-自主層/05-2-Headless模式與CI-CD整合.md)

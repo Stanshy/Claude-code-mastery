@@ -265,3 +265,9 @@ Resolution steps:
 - In your current development workflow, which steps require manually calling external APIs and pasting results into Claude? These are potential use cases for MCP.
 - If you have GitHub, Slack, PostgreSQL, Figma, and Playwright — five MCP servers enabled simultaneously — but a particular task only requires querying the database, how should you manage context consumption?
 - In a high-security production environment, what criteria would you use to evaluate whether a third-party MCP server is trustworthy?
+
+---
+
+⬅️ [Previous: Skills System](03-3-skills.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Custom Subagents](../04-orchestration/04-1-subagents.md)
+
+🌐 [繁體中文版](../../zh/03-自動化層/03-4-MCP-Servers.md)

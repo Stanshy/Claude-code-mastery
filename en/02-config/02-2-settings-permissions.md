@@ -196,8 +196,96 @@ A broad allow (e.g., `Bash(npm run *)`) has the downside of occasionally permitt
 
 ---
 
+## Security Best Practices
+
+The allow/deny rules and five permission modes covered above are "mechanisms." This section focuses on "strategy" — how to combine these mechanisms in different scenarios to prevent the Agent from accessing things it shouldn't.
+
+### Dangerous Operations Checklist
+
+The following operations should be added to deny rules, ordered by risk level:
+
+| Risk Level | Deny Rule | Protection Target |
+|-----------|-----------|-------------------|
+| 🔴 Critical | `Bash(rm -rf *)` | Prevent recursive deletion of entire directories |
+| 🔴 Critical | `Bash(git push --force *)` | Prevent overwriting remote history |
+| 🔴 Critical | `Bash(git reset --hard *)` | Prevent discarding uncommitted changes |
+| 🔴 Critical | `Edit(.env*)` | Prevent modification of environment variables and secrets |
+| 🟠 High | `Edit(*.pem)` | Prevent modification of SSL certificates and private keys |
+| 🟠 High | `Edit(*secret*)` | Prevent modification of files containing secrets |
+| 🟠 High | `Edit(*credential*)` | Prevent modification of credential files |
+| 🟠 High | `Bash(chmod 777 *)` | Prevent opening all file permissions |
+| 🟡 Medium | `Bash(curl * \| sh)` | Prevent downloading and executing unknown scripts |
+| 🟡 Medium | `Edit(.claude/settings.json)` | Prevent Agent from modifying its own permissions |
+
+Actual settings.json configuration example:
+
+```json
+{
+  "permissions": {
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Edit(.env*)",
+      "Edit(*.pem)",
+      "Edit(*secret*)",
+      "Edit(*credential*)",
+      "Edit(.claude/settings.json)"
+    ]
+  }
+}
+```
+
+### Sensitive Information Protection
+
+Claude Code reads files within your project during task execution. If `.env` or credential files are not protected by deny rules, the Agent may read their contents during debugging or analysis, and potentially write sensitive information into commit messages, PR descriptions, or log output.
+
+**File patterns that must be denied**:
+
+```json
+{
+  "permissions": {
+    "deny": [
+      "Read(.env*)",
+      "Edit(.env*)",
+      "Read(**/credentials.json)",
+      "Read(**/*token*)",
+      "Read(**/*secret*)"
+    ]
+  }
+}
+```
+
+**CI/CD environment distinction**: In CI/CD workflows, environment variables are injected through the runner's env (e.g., GitHub Actions' `${{ secrets.API_KEY }}`), not hardcoded in settings.json. The settings.json should only contain permission rules, never actual secret values.
+
+### Team Permission Minimization
+
+When collaborating in teams, the core permission strategy is: **shared settings guard the baseline, personal settings add flexibility**.
+
+| Settings Layer | File | Strategy | Version Controlled |
+|---------------|------|----------|-------------------|
+| Team shared | `.claude/settings.json` | Only deny rules (security baseline) | ✅ Yes |
+| Personal override | `.claude/settings.local.json` | Allow rules (personal preferences) | ❌ No |
+
+**Principles**:
+
+1. **New team members use default permission mode**. Onboarding docs should never instruct new members to set `bypassPermissions` — this skips all safety confirmations
+2. **Deny rules are maintained by the Tech Lead**, committed to version control via `.claude/settings.json`, automatically inherited by all team members
+3. **Personal allow expansions don't override team baselines**. Even if someone adds broader allow rules in their local settings, team-level deny rules still take effect (deny has higher priority than allow)
+4. **Audit permission configurations periodically**. Use the `/permissions` command to check currently active rules and confirm there are no outdated or overly broad allows
+
+---
+
 ## Self-Assessment
 
 - If you want Claude to be able to run `npx jest --coverage` but do not want to allow all `npx` commands, how should you write the allow rule?
 - When both `.claude/settings.json` and `~/.claude/settings.json` exist and have conflicting settings, which one takes effect?
 - Why is it recommended to add `Edit(.claude/settings.json)` to the deny rules?
+- A team member writes `"allow": ["Edit(.env)"]` in `.claude/settings.local.json`, but the team's `.claude/settings.json` has `"deny": ["Edit(.env*)"]`. Can Claude edit `.env`? Why or why not?
+- In a CI/CD environment, why shouldn't you put API keys in settings.json? What is the correct approach?
+
+---
+
+⬅️ [Previous: CLAUDE.md Complete Guide](02-1-claude-md-guide.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Agent = Model + Harness](02-3-harness-preview.md)
+
+🌐 [繁體中文版](../../zh/02-基礎配置/02-2-設定檔與權限系統.md)

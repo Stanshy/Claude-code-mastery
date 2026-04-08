@@ -305,3 +305,9 @@ Solution: Before running `/review`, first run `git add <files>`, then use `git d
 - Which content in your CLAUDE.md is only useful during specific tasks (such as deployment or release)? These should be migrated to separate Skills.
 - If a `/deploy` Skill does not have `disable-model-invocation: true` set, what might happen when a user says "help me push this up"?
 - What is the difference in output between `` !`git diff --staged` `` and `` !`git diff` ``? In what scenarios should you use which one?
+
+---
+
+⬅️ [Previous: Advanced Hooks & Validator Pattern](03-2-hooks-advanced.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: MCP Servers](03-4-mcp-servers.md)
+
+🌐 [繁體中文版](../../zh/03-自動化層/03-3-Skills系統.md)

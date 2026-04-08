@@ -199,3 +199,9 @@ You do not need to manage Auto Memory manually. Your responsibility is to mainta
 - Does your CLAUDE.md contain anything Claude can infer from `package.json` or the directory structure on its own? If so, delete it.
 - When Claude does something wrong in your project, do you add the mistake and the correct approach to CLAUDE.md?
 - How many lines is your CLAUDE.md right now? If it exceeds 200 lines, which content can be moved to separate files referenced via `@`?
+
+---
+
+⬅️ [Previous: Installation & First Success](../01-intro/01-2-installation.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Settings & Permissions](02-2-settings-permissions.md)
+
+🌐 [繁體中文版](../../zh/02-基礎配置/02-1-CLAUDE-MD完全指南.md)

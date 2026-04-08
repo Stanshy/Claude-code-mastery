@@ -180,3 +180,9 @@ After completing this chapter, make sure you can answer the following questions:
 2. Your colleague says they want to use Claude Code for "real-time completion while typing." How would you respond? What alternative tool would you recommend, and why?
 
 3. In the hands-on example you just executed, what steps did Claude Code perform? Which stage of the Agent Loop does each step correspond to?
+
+---
+
+📖 [Index](../00-index.md) ｜ ➡️ [Next: Installation & First Success](01-2-installation.md)
+
+🌐 [繁體中文版](../../zh/01-認識Claude-Code/01-1-什麼是Claude-Code.md)

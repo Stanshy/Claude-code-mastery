@@ -245,3 +245,9 @@ Principle: Only grant the tools the task actually needs. The narrower `allowedTo
 - Can you explain what types of tasks `allowedTools: ["Read", "Grep", "Glob"]` and `allowedTools: ["Read", "Edit", "Bash", "Grep", "Glob"]` are each suited for, and why the distinction matters?
 - If `assistant "Fix the bug in src/auth.ts"` stops outputting halfway through and displays a truncation message, which parameter would you adjust, and what is a reasonable starting value?
 - From the SDK's perspective, what practical problem does the async iterator design of the `query` function solve (as opposed to returning the complete result all at once)?
+
+---
+
+⬅️ [Previous: Headless Mode & CI/CD Integration](05-2-headless-cicd.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Seven Design Principles](../06-harness/06-1-seven-principles.md)
+
+🌐 [繁體中文版](../../zh/05-自主層/05-3-Agent-SDK.md)

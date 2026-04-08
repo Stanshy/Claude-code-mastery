@@ -128,3 +128,9 @@
 | MCP connection failed | Invalid token or malformed config | Check status with `/mcp` |
 | Context overload | Session too long | `/clear` or `/compact` |
 | JSON parse error | Syntax error in settings.json | Validate with `node -e "JSON.parse(...)"` |
+
+---
+
+⬅️ [Previous: David Chu Evolution Framework](../07-frameworks/07-4-david-chu.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Resource Index](08-2-resources.md)
+
+🌐 [繁體中文版](../../zh/08-參考資源/08-1-速查表.md)

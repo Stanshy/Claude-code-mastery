@@ -154,3 +154,9 @@ Current limitations: Requires a highly mature Harness (architectural constraints
 - Can you describe the responsibilities of the Lead and Teammates, and how they communicate with each other?
 - Given a task (e.g., "add a user authentication module to ai-dev-assistant"), can you design a reasonable 3-Teammate division of labor and specify each Teammate's file scope?
 - Under what conditions would you choose Subagent over Agent Teams?
+
+---
+
+⬅️ [Previous: Parallel Development & Worktree](../04-orchestration/04-3-worktree.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Headless Mode & CI/CD Integration](05-2-headless-cicd.md)
+
+🌐 [繁體中文版](../../zh/05-自主層/05-1-Agent-Teams.md)

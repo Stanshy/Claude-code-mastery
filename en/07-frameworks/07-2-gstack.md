@@ -183,3 +183,9 @@ This is the core value of `/office-hours`: it is not about making you spend more
 - The last time you started a new feature, how much time did you spend thinking about "why should we do this" and "where is the most likely failure point" before writing the first line of code?
 - Which of gstack's roles (CEO, Eng Manager, Designer, Reviewer, QA Lead, Security Officer, Release Engineer) is most lacking in your current workflow? How are you currently filling (or not filling) that gap?
 - If you had to pick one of gstack's three transplantable practices to try this week, which one would you choose? Why?
+
+---
+
+⬅️ [Previous: Boris Cherny Workflow](07-1-boris-cherny.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Open-Source Harness Cases](07-3-open-source-cases.md)
+
+🌐 [繁體中文版](../../zh/07-實戰框架與工作流/07-2-gstack角色系統.md)

@@ -102,6 +102,32 @@ Understanding the mechanics of automatic compaction helps you see why you should
 
 ---
 
+### 6. Cost Awareness: Model Selection & Token Conservation Principles
+
+Context management affects not just quality but also cost directly. Every token is billed, and wasted context is wasted budget.
+
+**Model Selection Principles** (pricing changes frequently — the following covers decision logic only, not specific numbers):
+
+| Scenario | Recommended Model | Rationale |
+|----------|------------------|-----------|
+| Architecture decisions, complex refactoring, security reviews | Opus | Requires highest reasoning quality; error cost far exceeds token cost |
+| Daily feature development, code review | Sonnet | Best balance between quality and cost |
+| Code search, format checking, simple Q&A | Haiku | Low-complexity tasks, speed is the priority |
+| Subagent (Explore / search-type) | Haiku | Read-only operations; built-in default already selects Haiku |
+| Subagent (reviewer / debugger) | Sonnet | Requires reasoning ability but not maximum precision |
+
+For how to configure models in Subagents, see the `model` field in [04-1 Custom Subagents](04-1-subagents.md).
+
+**Three Cost Principles**:
+
+1. **Use a lower-tier model when it can handle the task**. Using Haiku instead of Opus for Explore Agents — the per-search token savings accumulate into significant amounts with high-frequency usage
+2. **Proactive context management is more cost-effective than buying more tokens**. The `/compact` command from section 3 and the Document & Clear method from section 4 above don't just maintain quality — they directly reduce token consumption. A `/clear` followed by reloading a plan file consumes fewer tokens and has a higher success rate than letting Claude repeatedly attempt tasks in a bloated context
+3. **The official pricing page is the only reliable cost reference**. Model pricing and token calculation methods can change at any time; numbers hardcoded in documentation will become outdated. Check the Anthropic official pricing page for the latest information
+
+**Use `/cost` to track spending**: In any session, type `/cost` to view cumulative token usage and cost for the current session. Building a habit of checking `/cost` before ending long sessions helps develop intuition about the cost profile of different task types.
+
+---
+
 ## Practical Example: Context Management for a Major Feature in the AI Dev Assistant
 > Main case study continued: In the AI Dev Assistant project, use the Document & Clear method to develop the analyzeFile feature while keeping context usage low throughout.
 
@@ -221,3 +247,9 @@ Correct approach: Use Plan Mode only for analysis and planning. After confirming
 ## Self-Check
 - You observe that Claude starts producing TypeScript functions without type annotations during a session, even though you explicitly required "all functions must have complete type annotations" at the beginning of the session. What symptom is this? What is your next action?
 - In the Document & Clear method, regarding the requirement that "the document must be self-contained," how would you design the structure of `docs/plan-analyzeFile.md` to ensure that a Claude with no memory of the current session can seamlessly continue work after reading it?
+
+---
+
+⬅️ [Previous: Custom Subagents](04-1-subagents.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Parallel Development & Worktree](04-3-worktree.md)
+
+🌐 [繁體中文版](../../zh/04-編排層/04-2-上下文管理策略.md)

@@ -268,3 +268,9 @@ Correct approach: Before writing the system prompt, finalize the tools field lis
 - If @security-reviewer is not triggered by auto-delegation, what is your first troubleshooting step?
 - The security-reviewer's `tools` field is set to `Read, Grep, Glob`, but you want it to also run `npm audit`. How should you adjust this while maintaining the principle of least privilege?
 - In what situation would you choose to create an Agent rather than a Skill? Provide a specific scenario from the ai-dev-assistant project.
+
+---
+
+⬅️ [Previous: MCP Servers](../03-automation/03-4-mcp-servers.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Context Management Strategies](04-2-context-management.md)
+
+🌐 [繁體中文版](../../zh/04-編排層/04-1-自訂Subagents.md)

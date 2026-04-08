@@ -242,3 +242,9 @@ How to use this table: When building or reviewing a Harness, each row serves as 
 - When was the last time your CLAUDE.md exceeded 200 lines? What did you do about it? (If you have never audited, that itself is a problem)
 - List the rules in your Harness that currently exist as prompt suggestions — which ones have consequences serious enough that they should be upgraded to Hooks?
 - If you upgrade Claude to the next major version right now, which of your Hooks or Skills might no longer be necessary? How would you verify this?
+
+---
+
+⬅️ [Previous: Agent SDK](../05-autonomous/05-3-agent-sdk.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: Build a Harness from Scratch](06-2-build-from-zero.md)
+
+🌐 [繁體中文版](../../zh/06-Harness-Engineering/06-1-七大設計原則.md)

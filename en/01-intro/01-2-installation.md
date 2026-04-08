@@ -158,3 +158,9 @@ Both integration methods simply provide an embedded terminal interface. Under th
 - Run `claude doctor`. Do all items show as passed? If any item fails, do you know how to fix it based on its suggestions?
 - Run `npm test` in the `ai-dev-assistant` directory. Does the output include `1 passed`? If it fails, which file or configuration does the error message point to?
 - Run `npx tsc`. Is there zero error output? If there are errors, are they related to `tsconfig.json` settings?
+
+---
+
+⬅️ [Previous: What is Claude Code](01-1-what-is-claude-code.md) ｜ 📖 [Index](../00-index.md) ｜ ➡️ [Next: CLAUDE.md Complete Guide](../02-config/02-1-claude-md-guide.md)
+
+🌐 [繁體中文版](../../zh/01-認識Claude-Code/01-2-安裝與第一次成功.md)
